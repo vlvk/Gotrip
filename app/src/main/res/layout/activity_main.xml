@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.av.richardcheung.application.MainActivity">
+
+
+    <TextView
+        android:text="查询"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="22dp"
+        tools:textSize="20sp"
+        android:onClick="search"
+        android:id="@+id/textView6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        tools:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="南京"
+            android:ems="10"
+            tools:textSize="22sp"
+            android:background="@drawable/text"
+            android:layout_marginTop="16dp"
+            android:id="@+id/Eadress"
+            android:layout_below="@+id/Sadress"
+            android:layout_alignLeft="@+id/Sadress"
+            android:layout_alignStart="@+id/Sadress"
+            android:layout_alignRight="@+id/Sadress"
+            android:layout_alignEnd="@+id/Sadress"
+            android:textColor="#B3B3B3" />
+
+        <Switch
+            android:text="学生票查询"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch3"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/editText12"
+            android:layout_alignLeft="@+id/editText12"
+            android:layout_alignStart="@+id/editText12"
+            android:textColor="#F5F5DC"
+            android:textCursorDrawable="@color/colorPrimaryDark" />
+
+        <Switch
+            android:text="只查高铁票"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch4"
+            android:layout_alignBaseline="@+id/switch3"
+            android:layout_alignBottom="@+id/switch3"
+            android:layout_alignRight="@+id/editText12"
+            android:layout_alignEnd="@+id/editText12"
+            android:textColor="#F5F5DC" />
+
+        <Button
+            android:text=""
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button9"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/bbtn"
+            android:layout_above="@+id/editText12"
+            android:layout_toRightOf="@+id/Sadress"
+            android:layout_toEndOf="@+id/Sadress"
+            android:onClick="exchange"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="成都"
+            android:ems="10"
+            android:background="@drawable/text"
+            android:layout_marginTop="24dp"
+            android:id="@+id/Sadress"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            tools:textSize="22sp"
+            android:textColor="#B3B3B3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="2017年4月13日"
+            android:ems="10"
+            tools:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/editText12"
+            android:background="@drawable/text"
+            android:onClick="data"
+            android:textColor="#B3B3B3"
+            android:layout_below="@+id/Eadress"
+            android:layout_alignLeft="@+id/Eadress"
+            android:layout_alignStart="@+id/Eadress"
+            tools:text="2017年4月13日"
+            android:layout_alignRight="@+id/button9"
+            android:layout_alignEnd="@+id/button9" />
+
+    </RelativeLayout>
+</RelativeLayout>
